@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { Home } from "./components/Home";
 import { About } from "./components/About";
-import {products }from './products'
+import { products } from "./products";
+
 import "./style.css";
 
 interface AppProps {}
@@ -24,10 +25,6 @@ class App extends Component<AppProps, AppState> {
   render() {
     return (
       <div>
-
-      {products.map((product, i) => (
-        <div key={i}>{product.id}</div>
-      ))}
         <Router>
           <Switch>
             <Route exact path="/">

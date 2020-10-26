@@ -9,14 +9,14 @@ export const products: Products[] = [
     price: 23,
     id: "1"
   },
-   {
+  {
     title: "Computer",
     price: 23,
     id: "2"
   },
-   {
+  {
     title: "Bicycle",
     price: 23,
     id: "3"
   }
-]
+];
