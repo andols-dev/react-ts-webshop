@@ -3,7 +3,9 @@ import { Products } from "./Products";
 export const Home: React.FC = () => {
   return (
     <div>
-      <Products />
+      
+        <Products />
+      
     </div>
   );
 };

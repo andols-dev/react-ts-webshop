@@ -16,7 +16,7 @@ export const ProductInfo: React.FC = () => {
       {allProducts
         .filter(product => product.id === id)
         .map((product, i) => (
-          <div key={i}>
+          <div className="flex flex-col" key={i}>
             <h1>{product.title}</h1>
             <h1>{product.price}</h1>
             <Link to="/">Home</Link>

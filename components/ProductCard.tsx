@@ -1,20 +1,20 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import {Products} from '../products'
+import React from "react";
+import { Link } from "react-router-dom";
+import { Products } from "../products";
 interface Props {
-    products: Products;
+  products: Products;
 }
 
-export const ProductCard: React.FC<Props> = ({products:{title,price,id}}) => {
-    
-   return (
-       <div style={{border: "1px solid"}}>
-         {title}
-         {id}
-         {price}
-         <Link to={`/productinfo/${id}`}>view more</Link>
+export const ProductCard: React.FC<Props> = ({
+  products: { title, price, id }
+}) => {
+  return (
+    <div className="w-1/4 mb-4 mr-4" style={{ border: "1px solid" }}>
+      <h1>{title}</h1>
+      <h1>{id}</h1>
+      <h1>{price}</h1>
 
-       
-       </div>
-   )
-}
+      <Link to={`/productinfo/${id}`}>view more</Link>
+    </div>
+  );
+};

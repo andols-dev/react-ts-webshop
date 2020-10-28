@@ -18,5 +18,10 @@ export const products: Products[] = [
     title: "Bicycle",
     price: 23,
     id: "3"
+  },
+  {
+    title: "Fridge",
+    price: 23,
+    id: "4"
   }
 ];

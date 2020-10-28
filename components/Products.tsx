@@ -6,7 +6,7 @@ export const Products: React.FC = () => {
   const allProducts = useContext(ProductsContext);
   // console.log(allProducts)
   return (
-    <div>
+    <div className="flex container mx-auto">
       {allProducts.map((product, i) => (
         <ProductCard key={i} products={product} />
       ))}
