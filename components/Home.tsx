@@ -1,5 +1,9 @@
 import React from "react";
-
+import { Products } from "./Products";
 export const Home: React.FC = () => {
-  return <div>hello from home</div>;
+  return (
+    <div>
+      <Products />
+    </div>
+  );
 };

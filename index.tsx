@@ -1,43 +1,31 @@
-import React, { Component } from "react";
-import { render } from "react-dom";
+import React from "react";
+import ReactDOM from "react-dom";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Home } from "./components/Home";
-import { About } from "./components/About";
-import { products } from "./products";
+
+import { ProductsContextProvider } from "./ProductsContext";
+import { ProductInfo } from "./components/ProductInfo";
 
 import "./style.css";
 
-interface AppProps {}
-interface AppState {
-  name: string;
-}
-
-class App extends Component<AppProps, AppState> {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "React"
-    };
-  }
-
-  render() {
-    return (
-      <div>
-        <Router>
-          <Switch>
+const App: React.FC = () => {
+  return (
+    <div>
+      <Router>
+        <Switch>
+          <ProductsContextProvider>
             <Route exact path="/">
               <Home />
             </Route>
-            <Route exact path="/about">
-              <About />
+            <Route path="/productinfo/:id">
+              <ProductInfo />
             </Route>
-          </Switch>
-        </Router>
-      </div>
-    );
-  }
-}
+          </ProductsContextProvider>
+        </Switch>
+      </Router>
+    </div>
+  );
+};
 
-render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
