@@ -6,10 +6,12 @@ export const Products: React.FC = () => {
   const allProducts = useContext(ProductsContext);
   // console.log(allProducts)
   return (
-    <div className="flex container mx-auto">
-      {allProducts.map((product, i) => (
-        <ProductCard key={i} products={product} />
-      ))}
+    <div className="flex justify-center" style={{ border: "1px solid" }}>
+      <div className="w-4/5 grid md:grid-cols-2 lg:grid-cols-4">
+        {allProducts.map((product, i) => (
+          <ProductCard key={i} products={product} />
+        ))}
+      </div>
     </div>
   );
 };
