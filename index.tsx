@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Home } from "./components/Home";
-
+import { Nav} from "./components/Nav";
 import { ProductsContextProvider } from "./ProductsContext";
 import { ProductInfo } from "./components/ProductInfo";
 import { PageNotFound } from "./components/PageNotFound";
@@ -14,6 +14,7 @@ const App: React.FC = () => {
     <ProductsContextProvider>
       <div>
         <Router>
+        <Nav/>
           <Switch>
             <Route exact path="/">
               <Home />
