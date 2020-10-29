@@ -7,7 +7,7 @@ export const Products: React.FC = () => {
   // console.log(allProducts)
   return (
     <div className="flex justify-center" style={{ border: "1px solid" }}>
-      <div className="mt-4 w-4/5 grid md:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-4 w-full grid md:grid-cols-2 lg:grid-cols-4 gap-4 px-6 py-6">
         {allProducts.map((product, i) => (
           <ProductCard key={i} products={product} />
         ))}
