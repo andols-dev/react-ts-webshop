@@ -9,7 +9,7 @@ export const ProductCard: React.FC<Props> = ({
   products: { title, price, id }
 }) => {
   return (
-    <div className="mb-4 mr-4" style={{ border: "1px solid" }}>
+    <div className="mb-4 sm:mr-4" style={{ border: "1px solid" }}>
       <h1>{title}</h1>
       <h1>{id}</h1>
       <h1>{price}</h1>
