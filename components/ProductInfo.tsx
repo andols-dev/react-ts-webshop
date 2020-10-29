@@ -13,7 +13,7 @@ export const ProductInfo: React.FC = () => {
 
   return (
     <div className="flex justify-center">
-      <div className="w-2/5">
+      <div className="w-4/5 sm:w-3/5 lg:w-2/5">
         {allProducts
           .filter(product => product.id === id)
           .map((product, i) => (
