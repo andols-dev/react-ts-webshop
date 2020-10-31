@@ -23,6 +23,7 @@ export const ProductInfo: React.FC = () => {
               <h1>{product.price}</h1>
               <Link to="/">Home</Link>
               <Link to="/hello">Home</Link>
+              <button>Buy</button>
             </div>
           ))}
       </div>
