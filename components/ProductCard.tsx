@@ -6,10 +6,11 @@ interface Props {
 }
 
 export const ProductCard: React.FC<Props> = ({
-  products: { title, price, id }
+  products: { title, price, id, img }
 }) => {
   return (
-    <div className="mb-4" style={{ border: "1px solid" }}>
+    <div className="mb-4">
+      <img src={img} />
       <h1>{title}</h1>
       <h1>{id}</h1>
       <h1>{price}</h1>
