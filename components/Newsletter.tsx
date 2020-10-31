@@ -1,3 +1,5 @@
 import React from "react";
 
-export const Newsletter: React.FC = () => <h1>newsletter</h1>;
+export const Newsletter: React.FC = () => (
+  <h1>signup for newsletter section</h1>
+);
