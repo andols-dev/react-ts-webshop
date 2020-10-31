@@ -12,13 +12,14 @@ import { Login } from "./components/Login";
 import { Footer } from "./components/Footer";
 import "./style.css";
 import { BacktoTop } from "./components/BacktoTop";
+import { NewProduct } from "./components/NewProduct";
 
 const App: React.FC = () => {
   return (
     <ProductsContextProvider>
       <div>
         <Router>
-          <NewsBanner />
+          
           <Nav />
 
           <Switch>
@@ -34,6 +35,10 @@ const App: React.FC = () => {
             <Route path="/login">
               <Login />
             </Route>
+            <Route path="/newproduct">
+              <NewProduct />
+            </Route>
+
             <Route>
               <PageNotFound />
             </Route>
