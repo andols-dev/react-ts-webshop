@@ -10,10 +10,10 @@ export const Nav: React.FC = () => {
   return (
     <div className="bg-gray-900">
       <div>
-        <div className="px-6 py-2 flex justify-between items-center">
+        <div className="px-6 py-4 flex justify-between items-center">
           <div className="text-white">
             <Link to="/">
-              <p>WebShop</p>
+              <h1 className="text-2xl">WebShop</h1>
             </Link>
           </div>
 
@@ -56,13 +56,16 @@ export const Nav: React.FC = () => {
 
       {isMenuOpen && (
         <div className="text-white text-center font-semibold px-6 py-6 ">
-          <Link to="/" className="block hover:bg-gray-800 pt-2 pb-2 rounded-sm">
+          <Link
+            to="/"
+            className="block hover:bg-gray-800 pt-2 pb-2 rounded-sm transition ease-in-out duration-150"
+          >
             Home
           </Link>
 
           <Link
             to="mycart"
-            className="block hover:bg-gray-800 pt-2 pb-2 flex justify-center rounded-sm"
+            className="block hover:bg-gray-800 pt-2 pb-2 flex justify-center rounded-sm transition ease-in-out duration-150"
           >
             <svg
               className="w-6 h-6"
@@ -82,7 +85,7 @@ export const Nav: React.FC = () => {
           <Link
             to="/login"
             href="#"
-            className="block hover:bg-gray-800 pt-2 pb-2 flex justify-center rounded-sm"
+            className="block hover:bg-gray-800 pt-2 pb-2 flex justify-center rounded-sm transition ease-in-out duration-150"
           >
             <svg
               className="w-6 h-6"
