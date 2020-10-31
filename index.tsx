@@ -10,6 +10,7 @@ import { PageNotFound } from "./components/PageNotFound";
 import "./style.css";
 import { NewsBanner } from "./components/NewsBanner";
 import { MyCart } from "./components/MyCart";
+import { Login } from "./components/Login";
 
 const App: React.FC = () => {
   return (
@@ -27,6 +28,9 @@ const App: React.FC = () => {
             </Route>
             <Route path="/mycart">
               <MyCart />
+            </Route>
+            <Route to="/login">
+              <Login />
             </Route>
             <Route>
               <PageNotFound />

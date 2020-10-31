@@ -51,9 +51,9 @@ export const Nav: React.FC = () => {
 
       {isMenuOpen && (
         <div className="text-white text-center font-semibold px-6 py-6 ">
-          <a href="#" className="block hover:bg-gray-800 pt-2 pb-2">
+          <Link to="/" className="block hover:bg-gray-800 pt-2 pb-2">
             Home
-          </a>
+          </Link>
 
           <Link
             to="mycart"
@@ -74,7 +74,8 @@ export const Nav: React.FC = () => {
               />
             </svg>
           </Link>
-          <a
+          <Link
+            to="/login"
             href="#"
             className="block hover:bg-gray-800 pt-2 pb-2 flex justify-center"
           >
@@ -92,7 +93,7 @@ export const Nav: React.FC = () => {
                 d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
               />
             </svg>
-          </a>
+          </Link>
         </div>
       )}
     </div>
