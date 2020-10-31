@@ -11,6 +11,7 @@ import "./style.css";
 import { NewsBanner } from "./components/NewsBanner";
 import { MyCart } from "./components/MyCart";
 import { Login } from "./components/Login";
+import { Hero } from "./components/Hero";
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <Router>
           <NewsBanner />
           <Nav />
+          <Hero />
           <Switch>
             <Route exact path="/">
               <Home />
