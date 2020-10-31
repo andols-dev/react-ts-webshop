@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 export const Nav: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -54,8 +54,9 @@ export const Nav: React.FC = () => {
           <a href="#" className="block hover:bg-gray-800 pt-2 pb-2">
             Home
           </a>
-          <a
-            href="#"
+
+          <Link
+            to="mycart"
             className="block hover:bg-gray-800 pt-2 pb-2 flex justify-center"
           >
             <svg
@@ -72,7 +73,7 @@ export const Nav: React.FC = () => {
                 d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
               />
             </svg>
-          </a>
+          </Link>
           <a
             href="#"
             className="block hover:bg-gray-800 pt-2 pb-2 flex justify-center"

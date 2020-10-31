@@ -9,6 +9,7 @@ import { PageNotFound } from "./components/PageNotFound";
 
 import "./style.css";
 import { NewsBanner } from "./components/NewsBanner";
+import { MyCart } from "./components/MyCart";
 
 const App: React.FC = () => {
   return (
@@ -23,6 +24,9 @@ const App: React.FC = () => {
             </Route>
             <Route path="/productinfo/:id">
               <ProductInfo />
+            </Route>
+            <Route path="/mycart">
+              <MyCart />
             </Route>
             <Route>
               <PageNotFound />
