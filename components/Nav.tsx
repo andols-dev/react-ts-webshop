@@ -12,7 +12,9 @@ export const Nav: React.FC = () => {
       <div>
         <div className="px-6 py-2 flex justify-between items-center">
           <div className="text-white">
-            <p>WebShop</p>
+            <Link to="/">
+              <p>WebShop</p>
+            </Link>
           </div>
 
           <div className="text-white " onClick={toggleMenu}>
