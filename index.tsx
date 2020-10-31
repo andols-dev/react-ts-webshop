@@ -6,11 +6,12 @@ import { Nav } from "./components/Nav";
 import { ProductsContextProvider } from "./ProductsContext";
 import { ProductInfo } from "./components/ProductInfo";
 import { PageNotFound } from "./components/PageNotFound";
-
-import "./style.css";
 import { NewsBanner } from "./components/NewsBanner";
 import { MyCart } from "./components/MyCart";
 import { Login } from "./components/Login";
+import { Footer } from "./components/Footer";
+import "./style.css";
+import { BacktoTop } from "./components/BacktoTop";
 
 const App: React.FC = () => {
   return (
@@ -38,6 +39,8 @@ const App: React.FC = () => {
             </Route>
           </Switch>
         </Router>
+        <BacktoTop />
+        <Footer />
       </div>
     </ProductsContextProvider>
   );
