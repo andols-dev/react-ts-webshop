@@ -17,10 +17,13 @@ export const Nav: React.FC = () => {
             </Link>
           </div>
 
-          <div className="text-white " onClick={toggleMenu}>
+          <div
+            className="text-white hover:bg-gray-800 focus:outline-none focus:bg-indigo-800 sm:-mr-2 transition ease-in-out duration-150 rounded-md  "
+            onClick={toggleMenu}
+          >
             {!isMenuOpen ? (
               <svg
-                className="w-6 h-6 cursor-pointer"
+                className="w-8 h-8 cursor-pointer"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
@@ -33,7 +36,7 @@ export const Nav: React.FC = () => {
               </svg>
             ) : (
               <svg
-                className="w-6 h-6 cursor-pointer"
+                className="w-8 h-8 cursor-pointer"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -53,13 +56,13 @@ export const Nav: React.FC = () => {
 
       {isMenuOpen && (
         <div className="text-white text-center font-semibold px-6 py-6 ">
-          <Link to="/" className="block hover:bg-gray-800 pt-2 pb-2">
+          <Link to="/" className="block hover:bg-gray-800 pt-2 pb-2 rounded-sm">
             Home
           </Link>
 
           <Link
             to="mycart"
-            className="block hover:bg-gray-800 pt-2 pb-2 flex justify-center"
+            className="block hover:bg-gray-800 pt-2 pb-2 flex justify-center rounded-sm"
           >
             <svg
               className="w-6 h-6"
@@ -79,7 +82,7 @@ export const Nav: React.FC = () => {
           <Link
             to="/login"
             href="#"
-            className="block hover:bg-gray-800 pt-2 pb-2 flex justify-center"
+            className="block hover:bg-gray-800 pt-2 pb-2 flex justify-center rounded-sm"
           >
             <svg
               className="w-6 h-6"
