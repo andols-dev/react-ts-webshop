@@ -8,7 +8,7 @@ export const NewsBanner: React.FC = () => {
   return (
     <div>
       {isBannerShown && (
-        <div className="bg-blue-400 px-6 py-4 text-center text-white ">
+        <div className="bg-green-600 px-6 py-4 text-center text-white ">
           newsbanner will be here <span onClick={hideBanner}>close banner</span>
         </div>
       )}
