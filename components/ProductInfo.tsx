@@ -12,18 +12,22 @@ export const ProductInfo: React.FC = () => {
   const allProducts = useContext(ProductsContext);
 
   return (
-    <div className="flex justify-center">
-      <div className="w-full sm:w-4/5 lg:w-2/5 px-6 sm:px-0">
+    <div className="flex justify-center ">
+      <div className="w-full sm:w-4/5 lg:w-2/5 px-6 sm:px-0 ">
         {allProducts
           .filter(product => product.id === id)
           .map((product, i) => (
-            <div key={i}>
-              <img src={product.img} />
-              <h1>{product.title}</h1>
-              <h1>{product.price}</h1>
-              <Link to="/">Home</Link>
-              <Link to="/hello">Home</Link>
-              <button>Buy</button>
+            <div className=" sm:flex " key={i}>
+              <div className="w-full sm:w-1/2">
+                <img src={product.img} />
+              </div>
+              <div className="w-full sm:w-1/2">
+                <h1>{product.title}</h1>
+                <h1>{product.price}</h1>
+                <Link to="/">Home</Link>
+                <Link to="/hello">Home</Link>
+                <button>Buy</button>
+              </div>
             </div>
           ))}
       </div>
