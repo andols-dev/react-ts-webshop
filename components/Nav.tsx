@@ -18,7 +18,7 @@ export const Nav: React.FC = () => {
           </div>
           <div className="flex text-white hidden md:flex">
             <Link
-              to="mycart"
+              to="/mycart"
               className="block hover:bg-gray-800 pt-2 pb-2 flex justify-center rounded-sm transition ease-in-out duration-150 transform hover:-translate-y-1 hover:scale-110 "
             >
               <svg

@@ -19,23 +19,22 @@ const App: React.FC = () => {
     <ProductsContextProvider>
       <div>
         <Router>
-          
           <Nav />
 
           <Switch>
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/productinfo/:id">
+            <Route exact path="/productinfo/:id">
               <ProductInfo />
             </Route>
-            <Route path="/mycart">
+            <Route exact path="/mycart">
               <MyCart />
             </Route>
-            <Route path="/login">
+            <Route exact path="/login">
               <Login />
             </Route>
-            <Route path="/newproduct">
+            <Route exact path="/newproduct">
               <NewProduct />
             </Route>
 
