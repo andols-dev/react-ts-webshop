@@ -4,6 +4,7 @@ export interface Products {
   id: string;
   img: string;
   latest: boolean;
+  discount: boolean;
 }
 export const products: Products[] = [
   {
@@ -12,7 +13,8 @@ export const products: Products[] = [
     id: "1",
     img:
       "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    latest: false
+    latest: false,
+    discount: true,
   },
   {
     title: "Computer",
@@ -20,7 +22,8 @@ export const products: Products[] = [
     id: "2",
     img:
       "https://images.unsplash.com/photo-1540574163026-643ea20ade25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    latest: true
+    latest: true,
+    discount: true,
   },
   {
     title: "Bicycle",
@@ -28,7 +31,8 @@ export const products: Products[] = [
     id: "3",
     img:
       "https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1298&q=80",
-    latest: true
+    latest: true,
+    discount: true,
   },
   {
     title: "Fridge",
@@ -36,7 +40,8 @@ export const products: Products[] = [
     id: "4",
     img:
       "https://images.unsplash.com/photo-1484101403633-562f891dc89a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80",
-    latest: false
+    latest: false,
+    discount: true,
   },
   {
     title: "TV",
@@ -44,7 +49,8 @@ export const products: Products[] = [
     id: "1",
     img:
       "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    latest: false
+    latest: false,
+    discount: true,
   },
   {
     title: "Computer",
@@ -52,7 +58,8 @@ export const products: Products[] = [
     id: "2",
     img:
       "https://images.unsplash.com/photo-1540574163026-643ea20ade25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    latest: false
+    latest: false,
+    discount: true,
   },
   {
     title: "Bicycle",
@@ -60,7 +67,8 @@ export const products: Products[] = [
     id: "3",
     img:
       "https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1298&q=80",
-    latest: true
+    latest: true,
+    discount: true,
   },
   {
     title: "Fridge",
@@ -68,7 +76,8 @@ export const products: Products[] = [
     id: "4",
     img:
       "https://images.unsplash.com/photo-1484101403633-562f891dc89a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80",
-    latest: false
+    latest: false,
+    discount: true,
   },
   {
     title: "TV",
@@ -76,7 +85,8 @@ export const products: Products[] = [
     id: "1",
     img:
       "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    latest: false
+    latest: false,
+    discount: true,
   },
   {
     title: "Computer",
@@ -84,7 +94,8 @@ export const products: Products[] = [
     id: "2",
     img:
       "https://images.unsplash.com/photo-1540574163026-643ea20ade25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    latest: false
+    latest: false,
+    discount: true,
   },
   {
     title: "Bicycle",
@@ -92,7 +103,8 @@ export const products: Products[] = [
     id: "3",
     img:
       "https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1298&q=80",
-    latest: false
+    latest: false,
+    discount: true,
   },
   {
     title: "Fridge",
@@ -100,6 +112,7 @@ export const products: Products[] = [
     id: "4",
     img:
       "https://images.unsplash.com/photo-1484101403633-562f891dc89a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80",
-    latest: true
+    latest: true,
+    discount: true,
   }
 ];
