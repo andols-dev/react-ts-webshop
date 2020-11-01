@@ -17,11 +17,11 @@ export const ProductInfo: React.FC = () => {
         {allProducts
           .filter(product => product.id === id)
           .map((product, i) => (
-            <div className=" sm:flex " key={i}>
-              <div className="w-full sm:w-1/2">
+            <div key={i}>
+              <div>
                 <img src={product.img} />
               </div>
-              <div className="w-full sm:w-1/2">
+              <div>
                 <h1>{product.title}</h1>
                 <h1>{product.price}</h1>
                 <Link to="/">Home</Link>
