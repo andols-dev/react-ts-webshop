@@ -27,11 +27,14 @@ export const ProductCard: React.FC<Props> = ({
         </div>
       )}
       <img src={img} />
-      <h1>{title}</h1>
-      <h1>{id}</h1>
-      <h1>{price}</h1>
 
-      <Link to={`/productinfo/${id}`}>view more</Link>
+      <h1>{price}</h1>
+      <div className="flex justify-between">
+        <button className="bg-gray-200 rounded-md p-2">
+          <Link to={`/productinfo/${id}`}>View</Link>
+        </button>
+        <button className="bg-gray-200 rounded-md p-2">Add</button>
+      </div>
     </div>
   );
 };
