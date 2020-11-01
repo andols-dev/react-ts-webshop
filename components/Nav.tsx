@@ -96,7 +96,7 @@ export const Nav: React.FC = () => {
       </div>
 
       {isMenuOpen && (
-        <div className="text-white text-center font-semibold px-6 py-6 ">
+        <div className="text-white text-center font-semibold px-6 py-6 md:hidden">
           <Link
             to="/"
             className="block hover:bg-gray-800 pt-2 pb-2 rounded-sm transition ease-in-out duration-150 transform hover:-translate-y-1 hover:scale-110 "
