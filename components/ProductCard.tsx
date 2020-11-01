@@ -6,7 +6,7 @@ interface Props {
 }
 
 export const ProductCard: React.FC<Props> = ({
-  products: { title, price, id, img, latest }
+  products: { title, price, id, img, latest, discount, disc }
 }) => {
   return (
     <div className="mb-4 relative">
@@ -16,6 +16,14 @@ export const ProductCard: React.FC<Props> = ({
           className="bg-green-600 rounded-full h-16 w-16 flex items-center justify-center text-white"
         >
           new
+        </div>
+      )}
+      {discount && (
+        <div
+          style={{ position: "absolute", top: "10px", left: "10px" }}
+          className="bg-red-600 rounded-full h-16 w-16 flex items-center justify-center text-white"
+        >
+          -{disc}%
         </div>
       )}
       <img src={img} />
