@@ -20,7 +20,6 @@ const App: React.FC = () => {
       <div>
         <Router>
           <Nav />
-
           <Switch>
             <Route exact path="/">
               <Home />
