@@ -30,7 +30,7 @@ export const ProductCard: React.FC<Props> = ({
       <img src={img} />
       <div className="p-6">
         <h4 className="font-semibold text-lg">{title}</h4>
-        <h1>{price}</h1>
+        <h1>${price}</h1>
         <Starz starz={starz} />
         <div className="mt-4 flex justify-between">
           <button className="bg-gray-200 rounded-md p-2">
