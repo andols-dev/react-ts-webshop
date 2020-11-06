@@ -10,7 +10,7 @@ export const ProductCard: React.FC<Props> = ({
   products: { title, price, id, img, latest, discount, disc, starz }
 }) => {
   return (
-    <div className="mb-4 mt-40 relative rounded-lg overflow-hidden border ">
+    <div className="antialiased mb-4 mt-40 relative rounded-lg overflow-hidden border text-gray-900">
       {latest && (
         <div
           style={{ position: "absolute", top: "10px", left: "10px" }}
@@ -29,7 +29,7 @@ export const ProductCard: React.FC<Props> = ({
       )}
       <img src={img} />
       <div className="p-6">
-        <h4>{title}</h4>
+        <h4 className="font-semibold text-lg">{title}</h4>
         <h1>{price}</h1>
         <Starz starz={starz} />
         <div className="flex justify-between">
