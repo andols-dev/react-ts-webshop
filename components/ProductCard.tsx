@@ -27,7 +27,7 @@ export const ProductCard: React.FC<Props> = ({
         </div>
       )}
       <img src={img} />
-
+      <h4>{title}</h4>
       <h1>{price}</h1>
       <div className="starz">
         {starz == 3 && (
@@ -119,7 +119,7 @@ export const ProductCard: React.FC<Props> = ({
           </div>
         )}
       </div>
-      <div className="flex justify-between mt-20">
+      <div className="flex justify-between">
         <button className="bg-gray-200 rounded-md p-2">
           <Link to={`/productinfo/${id}`}>View</Link>
         </button>
