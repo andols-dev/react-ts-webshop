@@ -9,7 +9,7 @@ export const ProductCard: React.FC<Props> = ({
   products: { title, price, id, img, latest, discount, disc, starz }
 }) => {
   return (
-    <div className="mb-4 relative">
+    <div className="mb-4 mt-40 relative">
       {latest && (
         <div
           style={{ position: "absolute", top: "10px", left: "10px" }}
