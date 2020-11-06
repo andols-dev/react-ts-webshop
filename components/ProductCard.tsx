@@ -119,7 +119,7 @@ export const ProductCard: React.FC<Props> = ({
           </div>
         )}
       </div>
-      <div className="flex justify-between">
+      <div className="flex justify-between mt-20">
         <button className="bg-gray-200 rounded-md p-2">
           <Link to={`/productinfo/${id}`}>View</Link>
         </button>
