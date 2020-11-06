@@ -32,7 +32,7 @@ export const ProductCard: React.FC<Props> = ({
         <h4 className="font-semibold text-lg">{title}</h4>
         <h1>{price}</h1>
         <Starz starz={starz} />
-        <div className="flex justify-between">
+        <div className="mt-4 flex justify-between">
           <button className="bg-gray-200 rounded-md p-2">
             <Link to={`/productinfo/${id}`}>View</Link>
           </button>

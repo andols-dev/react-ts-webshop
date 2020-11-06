@@ -6,7 +6,7 @@ interface starz {
 
 export const Starz: React.FC<starz> = ({ starz }) => {
   return (
-    <div className="starz">
+    <div className="starz mt-4">
       {starz == 3 && (
         <div className="flex">
           <svg
