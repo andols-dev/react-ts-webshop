@@ -28,7 +28,6 @@ export const Products: React.FC = () => {
           value={searchValue}
           onChange={handleChange}
         />
-        <input type="submit" value="Submit" />
       </div>
 
       <div className="flex justify-center ">
