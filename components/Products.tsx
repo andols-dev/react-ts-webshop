@@ -20,7 +20,7 @@ export const Products: React.FC = () => {
   console.log(allProducts);
   return (
     <div>
-      <div className="px-6 mt-10">
+      <div className="input px-6 mt-10">
         <input
           type="text"
           className="border"
