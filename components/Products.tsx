@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
 import { ProductsContext } from "../ProductsContext";
 import { ProductCard } from "./ProductCard";
-
+import "../style.css";
 export const Products: React.FC = () => {
   const allProducts = useContext(ProductsContext);
   const [searchValue, setSearchValue] = useState("");
@@ -22,9 +22,10 @@ export const Products: React.FC = () => {
   console.log(allProducts);
   return (
     <div>
-      <div className="text-center mt-10">
+      <div className="px-6 mt-10">
         <input
-          className="border"
+          className="px-2 py-2 border"
+          type="text"
           placeholder="search products..."
           value={searchValue}
           onChange={handleChange}
