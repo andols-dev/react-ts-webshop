@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
 import { ProductsContext } from "../ProductsContext";
 import { ProductCard } from "./ProductCard";
-import "../style.css";
+import "./products.css";
 export const Products: React.FC = () => {
   const allProducts = useContext(ProductsContext);
   const [searchValue, setSearchValue] = useState("");

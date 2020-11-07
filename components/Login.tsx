@@ -20,8 +20,8 @@ export const Login: React.FC = () => {
     }));
   };
   return (
-    <div>
-      <form className="flex flex-col">
+    <div className="flex justify-center">
+      <form className="w-2/5 flex flex-col">
         <label>Username:</label>
         <input
           type="text"
