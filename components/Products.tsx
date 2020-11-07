@@ -1,16 +1,42 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { ProductsContext } from "../ProductsContext";
 import { ProductCard } from "./ProductCard";
 
 export const Products: React.FC = () => {
   const allProducts = useContext(ProductsContext);
+  const [searchValue, setSearchValue] = useState("");
+  const [searchResults, setSearchResults] = useState(allProducts);
+
+  const handleChange = e => {
+    setSearchValue(e.target.value);
+    console.log(e.target.value);
+  };
+
+  useEffect(() => {
+    const results = allProducts.filter(product =>
+      product.title.toLowerCase().includes(searchValue)
+    );
+    setSearchResults(results);
+  }, [searchValue]);
   // console.log(allProducts)
+  console.log(allProducts);
   return (
-    <div className="flex justify-center mt-10">
-      <div className="mt-10 w-full grid md:grid-cols-2 lg:grid-cols-4 gap-4 px-6 py-6">
-        {allProducts.map((product, i) => (
-          <ProductCard key={i} products={product} />
-        ))}
+    <div>
+      <div className="text-center mt-10">
+        <input
+          className="border"
+          placeholder="search products..."
+          value={searchValue}
+          onChange={handleChange}
+        />
+      </div>
+
+      <div className="flex justify-center ">
+        <div className="w-full grid md:grid-cols-2 lg:grid-cols-4 gap-4 px-6 py-6">
+          {searchResults.map((product, i) => (
+            <ProductCard key={i} products={product} />
+          ))}
+        </div>
       </div>
     </div>
   );

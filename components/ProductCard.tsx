@@ -10,7 +10,7 @@ export const ProductCard: React.FC<Props> = ({
   products: { title, price, id, img, latest, discount, disc, starz }
 }) => {
   return (
-    <div className="antialiased mb-4 mt-40 relative rounded-lg overflow-hidden border text-gray-900">
+    <div className="antialiased mb-4  relative rounded-lg overflow-hidden border text-gray-900">
       {latest && (
         <div
           style={{ position: "absolute", top: "10px", left: "10px" }}
