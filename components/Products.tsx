@@ -19,7 +19,7 @@ export const Products: React.FC = () => {
     setSearchResults(results);
   }, [searchValue]);
   // console.log(allProducts)
-  console.log(allProducts);
+  
   return (
     <div>
       <div className="px-6 mt-10">
