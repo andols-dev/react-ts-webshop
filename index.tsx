@@ -6,7 +6,6 @@ import { Nav } from "./components/Nav";
 import { ProductsContextProvider } from "./ProductsContext";
 import { ProductInfo } from "./components/ProductInfo";
 import { PageNotFound } from "./components/PageNotFound";
-import { NewsBanner } from "./components/NewsBanner";
 import { MyCart } from "./components/MyCart";
 import { Login } from "./components/Login";
 import { Footer } from "./components/Footer";
