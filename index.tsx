@@ -12,6 +12,7 @@ import { Footer } from "./components/Footer";
 import "./style.css";
 import { BacktoTop } from "./components/BacktoTop";
 import { NewProduct } from "./components/NewProduct";
+import About from "./components/About";
 
 const App: React.FC = () => {
   return (
@@ -34,6 +35,9 @@ const App: React.FC = () => {
             </Route>
             <Route exact path="/upcoming">
               <NewProduct />
+            </Route>
+            <Route exact path="/about">
+              <About message="hello" />
             </Route>
 
             <Route>

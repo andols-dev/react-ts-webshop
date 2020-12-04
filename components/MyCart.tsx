@@ -1,8 +1,9 @@
 import React from "react";
-
+import Seo from "./Seo";
 export const MyCart: React.FC = () => {
   return (
     <div>
+      <Seo title="my cart" />
       <h3>Your cart is empty</h3>
       <h3>Total cost:</h3>
       <button>

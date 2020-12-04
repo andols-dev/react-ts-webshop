@@ -1,5 +1,6 @@
 import React from "react";
 
-export const About: React.FC = () => {
-  return <div>hello from about</div>;
-};
+type AppProps = { message: string };
+export default function About({ message }: AppProps) {
+  return <div>{message}</div>;
+}

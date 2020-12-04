@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import Seo from "./Seo";
 export const Login: React.FC = () => {
   const formDefaultValues = {
     userName: "",
@@ -20,25 +20,28 @@ export const Login: React.FC = () => {
     }));
   };
   return (
-    <div className="flex justify-center">
-      <form className="w-2/5 flex flex-col">
-        <label>Username:</label>
-        <input
-          type="text"
-          name={"userName"}
-          className="border"
-          value={userName}
-          onChange={handleChange}
-        />
-        <label>Password:</label>
-        <input
-          type="password"
-          name={"password"}
-          className="border"
-          value={password}
-          onChange={handleChange}
-        />
-      </form>
+    <div>
+      <Seo title="login" />
+      <div className="flex justify-center">
+        <form className="w-2/5 flex flex-col">
+          <label>Username:</label>
+          <input
+            type="text"
+            name={"userName"}
+            className="border"
+            value={userName}
+            onChange={handleChange}
+          />
+          <label>Password:</label>
+          <input
+            type="password"
+            name={"password"}
+            className="border"
+            value={password}
+            onChange={handleChange}
+          />
+        </form>
+      </div>
     </div>
   );
 };
